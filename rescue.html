@@ -317,13 +317,13 @@ The app divided users in two groups:
 <div class="column is-10">
   <div class="about">
     <h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: lighter;">
-    <i>  Disclaimer: The photos used are from Unsplash and are for non-commercial purposes. Any Resemblance to Actual Persons, Living or Dead, is Purely Coincidental.
+    <i>  Disclaimer: The photos used are from Unsplash and are for non-commercial purposes.
   </i>
  <br><br> </h2>
 <h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: normal;">
-  Consider the case of Murali. His hometown is flooded and his house has collapsed. With the advancing rains and flooding Murali has to find a place to stay and needs food and medication to survive. Murali’s technical skill is low, so it is not possible for him to look at complex interfaces and find out what to do. Thus, we must design an interface that is simple to use and understand. Meaning that we have to design an interface with cognitive load.
+  In the first phase, we need to first run the repeater on the company's servers. To do this, we need to specify the port that the repeater needs. One of the main needs of the program is updating, so it is necessary that our module can control the version as well. We have left the version controller in the repeater because users do not have access to it and it is implemented inside the servers and has higher security.
 <br><br>
-Divya monitors one of the relief centers in Kochi. By using “Rescue Me”, Divya can help out other people through the communication channel - again, a decentralized network that is based on peer-to-peer interactions. Based on the localized activity in her region, she can communicate with other people who use the app to donate food and medical supplies. By using the communication channel, Divya is able to find Murali’s request for aid. Using this, she can get in touch with Murali and provide help.
+The repeater acts like a proxy server. Both servers and viewers connect to it and can connect to each other through it. This is a way of circumventing the limitations that nat has placed on us. In fact, connections are managed and packets are sent through the repeater.
 </h2>
 <h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: normal;">
 <br><br>
@@ -336,7 +336,7 @@ Divya monitors one of the relief centers in Kochi. By using “Rescue Me”, Div
 <div class="columns is-centered">
 <div class="column is-4">
   <div class="about">
-<h1 class="title is-4" style="color: rgb(33,37,41); font-family: 'Work Sans',sans-serif; font-weight: bold; text-align: left;">LO-FI PROTOTYPING
+<h1 class="title is-4" style="color: rgb(33,37,41); font-family: 'Work Sans',sans-serif; font-weight: bold; text-align: left;">Server PROTOTYPING
 </h1>
 </div>
 </div>
@@ -344,7 +344,10 @@ Divya monitors one of the relief centers in Kochi. By using “Rescue Me”, Div
 <div class="column is-6">
   <div class="about">
 <h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: normal;">
-Initially, I used Sketch to design the low fidelity prototype to understand the different components and screens in the app. I followed a two-tabbed layout. The first tab shows all services pertaining to help, aid, and rescue while the second tab shows the communication channel.
+  First I implemented a simple plan for the server section (end users connection with repeater). The part that the user is going to use should have a simple and understandable design. We have also tried to consider the simplest steps for the user, so that users only need to click on the connection button and announce their ID.
+  To do this, you need to design the script from scratch and design a new page. In other sections, the settings need to be adjusted automatically according to the company's repeater, and also the unique ID should be assigned automatically. To assign an ID, I replaced my innovative algorithm that can assign a unique nine-digit ID to each user.
+  For a secure connection, the user needs to provide a password for their connection that they will announce to the person when connecting. This prevents anonymous people from connecting to the user's system even if they have an ID.
+  256-bit encryption is used for the security of packets and their invisibility. The user does not need to be involved in doing these things and are among the basic needs of a secure connection that is done by default on the initiative.
 <br><br>
 <h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: normal;">
 <br><br>
@@ -369,7 +372,8 @@ Initially, I used Sketch to design the low fidelity prototype to understand the 
 <img src="rescue/oldred.png" style="background-color: rgba(255, 0, 0, 0.0);">
 <h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: normal;">
 <br><br>
-This layout is easy to understand but complicates the interface as users have to go through multiple menus to find the services and request for food/medical supplies and shelter. This is also when I was reading about cognitive overload. Considering the large number of users who are in a disaster situation, it is not user-friendly to design an app with multiple menus as it complicates the user’s actions.
+The first four images are the original open source program, which, as can be seen, has features that are not very useful and do not even have the necessary features such as encryption. It has a very complex user interface that requires training to work with.
+On the other hand, as shown in the last photo, I have changed the user interface a lot and the user only encounters this page in the whole program, which is very simple and has greatly reduced its complexity.
 <br><br>
 </h2>
 </div>
@@ -378,7 +382,7 @@ This layout is easy to understand but complicates the interface as users have to
 <div class="columns is-centered">
 <div class="column is-4">
   <div class="about">
-<h1 class="title is-4" style="color: rgb(33,37,41); font-family: 'Work Sans',sans-serif; font-weight: bold; text-align: left;">HI-FI PROTOTYPING
+<h1 class="title is-4" style="color: rgb(33,37,41); font-family: 'Work Sans',sans-serif; font-weight: bold; text-align: left;">Viewer PROTOTYPING
 </h1>
 </div>
 </div>
