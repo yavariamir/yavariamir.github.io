@@ -301,7 +301,7 @@ My intention is to get things done automatically to reduce human error. To achie
 <div class="columns is-centered">
 <div class="column is-4">
   <div class="about">
-<h1 class="title is-4" style="color: rgb(33,37,41); font-family: 'Work Sans',sans-serif; font-weight: bold; text-align: left;">WEB APP PROTOTYPING <br>
+<h1 class="title is-4" style="color: rgb(33,37,41); font-family: 'Work Sans',sans-serif; font-weight: bold; text-align: left;">WHY ZIGBEE <br>
 </h1>
 </div>
 </div>
@@ -309,6 +309,8 @@ My intention is to get things done automatically to reduce human error. To achie
 <div class="column is-6">
   <div class="about">
 <h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: normal;">
+  
+ZigBee is intended to be easier to use and less expensive than existing personal network technologies like Bluetooth. ZigBee is a wireless network technology that is both inexpensive and energy-efficient. It uses a mesh network topology, which allows for excellent reliability and an acceptable range.
 <br><br>
 </h2>
 </div>
@@ -316,36 +318,42 @@ My intention is to get things done automatically to reduce human error. To achie
 </div>
 
 <div class="columns is-centered">
-<div class = "column is-10">
-<img src="groceristar/one.png" style="background-color: rgba(255, 0, 0, 0.0);">
-<h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: normal;">
+<div class = "column is-8">
+<img src="groceristar/ZigBee-topology.jpg" style="background-color: rgba(255, 0, 0, 0.0);">
+<h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: lighter;">
+  <i>ZigBee mesh topology: Every ZIGBEE network have one and only one coordinator</i>
 <br><br>
 </h2>
-<img src="groceristar/two.png" style="background-color: rgba(255, 0, 0, 0.0);">
-<h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: normal;">
-<br><br>
+<img src="groceristar/5-Table1-1.png" style="background-color: rgba(255, 0, 0, 0.0);">
+<h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: lighter;">
+  <i>A comparison of different parameters for ZIGBEE, UWB, BLE and WI-FI </i>
+  <br><br>
 </h2>
-<img src="groceristar/three.png" style="background-color: rgba(255, 0, 0, 0.0);">
-<h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: normal;">
-<br><br>
+<img src="groceristar/energyComparison.png" style="background-color: rgba(255, 0, 0, 0.0);">
+<h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: lighter;">
+  <i>Comparison of the normalized energy consumption for each protocol</i>
+  <br><br>
 </h2>
-<img src="groceristar/four.png" style="background-color: rgba(255, 0, 0, 0.0);">
-<h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: normal;">
-<br><br>
-</h2>
-<img src="groceristar/five.png" style="background-color: rgba(255, 0, 0, 0.0);">
-<h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: normal;">
-<br><br>
-</h2>
-</div>
-</div>
 
+</div>
+</div>
+<div class="columns is-centered">
+  <div class = "column is-10">
+    <div class = "about">
+  <h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: normal;">
+    From the comparison of the above tables, it is easy to understand that ZigBee offers acceptable security along with the lowest energy consumption. Also, thanks to its star topology, this network has a high expansion capability that can provide a longer range while consuming less energy. We can also determine the frequency we want to be in that range with the least interference.
+  <br><br><br><br>
+  </h2>
+  </h2>
+  </div>
+  </div>
+  </div>
 
 
 <div class="columns is-centered">
 <div class="column is-4">
   <div class="about">
-<h1 class="title is-4" style="color: rgb(33,37,41); font-family: 'Work Sans',sans-serif; font-weight: bold; text-align: left;">MOBILE APP PROTOTYPING <br>
+<h1 class="title is-4" style="color: rgb(33,37,41); font-family: 'Work Sans',sans-serif; font-weight: bold; text-align: left;">HARDWARE DESIGN <br>
 </h1>
 </div>
 </div>
@@ -353,6 +361,7 @@ My intention is to get things done automatically to reduce human error. To achie
 <div class="column is-6">
   <div class="about">
 <h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: normal;">
+  Hardware design is an important part because we need to be able to take advantage of ZigBee communication, especially in this project. There is a need for a decision-making and planned section to ensure communication and in the event of an interruption. Therefore, we have used the Arduino board according to the issue of energy consumption and implementation cost.
 <br><br>
 </h2>
 </div>
@@ -360,18 +369,21 @@ My intention is to get things done automatically to reduce human error. To achie
 </div>
 
 <div class="columns is-centered">
-<div class = "column is-10">
-<img src="groceristar/mone.png" style="background-color: rgba(255, 0, 0, 0.0);">
-<h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: normal;">
+<div class = "column is-8">
+<img src="groceristar/Measured-power-consumption-of-an-Arduino-UNO-R3-board-under-different-test-conditions.png" style="background-color: rgba(255, 0, 0, 0.0);">
+<h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: lighter;">
+<i>Measured power consumption of an Arduino UNO R3 board under different test conditions</i>
+  <br><br>
+</h2>
+<img src="groceristar/ArduinoModelBeginners_1024.webp" style="background-color: rgba(255, 0, 0, 0.0);">
+<h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: lighter;">
+  <i>Comparison of Arduino models for beginners</i>
 <br><br>
 </h2>
-<img src="groceristar/mtwo.png" style="background-color: rgba(255, 0, 0, 0.0);">
-<h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: normal;">
-<br><br>
-</h2>
-<img src="groceristar/mthree.png" style="background-color: rgba(255, 0, 0, 0.0);">
-<h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: normal;">
-<br><br>
+<img src="groceristar/Lcd.webp" style="background-color: rgba(255, 0, 0, 0.0);">
+<h2 class="subtitle is-6" style="color: #404040; text-align: justify; font-weight: lighter;">
+  <i>LCD display to Arduino connection</i>
+  <br><br>
 </h2>
 </div>
 </div>
